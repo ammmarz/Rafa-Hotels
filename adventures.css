@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Author', sans-serif;
+} 
+
+/*Header section*/
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    transition: 0.5s ease;
+    word-spacing: 0px;   
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+}
+
+  .logo img {
+    width: 100px; 
+    height: auto; 
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-bar a{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-bar a::before{
+    content: '';
+    position: absolute;
+    background: skyblue;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-bar a:hover:before{
+    width: 100%;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.Adventures{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Adventures:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.Adventures .content{
+    z-index: 888;
+    color: whitesmoke;
+    width: 70%;
+    margin-top: 50px;
+}
+.Adventures .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.Adventures .content a{
+    background: white;
+    padding: 15px 35px;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.Adventures .bimage{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-blend-mode: color-burn;
+}
+
+/* Body section */
+
+/*Footer section*/
+
+footer {
+    background-color: #111;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9; 
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
